@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced HTML5 Page with Form</title>
+</head>
+<body>
+
+<header>
+    <h1>My HTML5 Project</h1>
+    <p>Demonstrating Lists, Tables, Media, and Forms with HTML5 validation.</p>
+</header>
+
+<main>
+    <!-- Lists Section -->
+    <section>
+        <h2>My Favorite Hobbies</h2>
+        <ul>
+            <li>Reading Books</li>
+            <li>Cooking</li>
+            <li>Traveling</li>
+        </ul>
+
+        <h3>Steps for Making Tea</h3>
+        <ol>
+            <li>Boil water</li>
+            <li>Add tea leaves or tea bag</li>
+            <li>Steep for 3-5 minutes</li>
+            <li>Add sugar or milk (optional)</li>
+        </ol>
+    </section>
+
+    <!-- Table Section -->
+    <section>
+        <h2>Monthly Expenses</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Month</th>
+                    <th>Food (USD)</th>
+                    <th>Transport (USD)</th>
+                    <th>Entertainment (USD)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>January</td>
+                    <td>200</td>
+                    <td>50</td>
+                    <td>70</td>
+                </tr>
+                <tr>
+                    <td>February</td>
+                    <td>180</td>
+                    <td>60</td>
+                    <td>90</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Media Section -->
+    <section>
+        <h2>Relaxing Nature Video</h2>
+        <video controls width="400">
+            <source src="sample-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <h3>Sample Audio</h3>
+        <audio controls>
+            <source src="sample-audio.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
+
+    <!-- Form Section -->
+    <section>
+        <h2>Registration Form</h2>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname" placeholder="Enter your first name" required minlength="2">
+
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname" placeholder="Enter your last name" required minlength="2">
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="name@example.com" required autocomplete="email">
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="">Select...</option>
+                    <option value="female">Female</option>
+                    <option value="male">Male</option>
+                    <option value="other">Other</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Account Information</legend>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required pattern="[A-Za-z0-9]{5,}" title="At least 5 characters, letters and numbers only">
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required minlength="6">
+
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required minlength="6">
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferences</legend>
+                <label>
+                    <input type="checkbox" name="newsletter" value="yes">
+                    Subscribe to newsletter
+                </label>
+
+                <label>
+                    <input type="radio" name="contact" value="email" required>
+                    Contact me via Email
+                </label>
+                <label>
+                    <input type="radio" name="contact" value="phone">
+                    Contact me via Phone
+                </label>
+
+                <label for="comments">Additional Comments:</label>
+                <textarea id="comments" name="comments" rows="4" placeholder="Write something here..."></textarea>
+            </fieldset>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 HTML5 Assignment Example</p>
+</footer>
+
+</body>
+</html>
